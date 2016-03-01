@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GoogleMaps API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    <link rel="stylesheet" href="jsMap.css">
+  </head>
+  <body>
+    <h1 id="title">Google Maps Sandbox</h1>
+    <div class="row">
+
+      <div class="col-xs-3 doge">
+        <img src="images/doge.jpg" alt="Such Maps" />
+      </div>
+      <div class="col-xs-4 info">
+        <div id="placeMarker" class="well">
+          <label for="Latitude">Latitude: </label><input class="lat" type="text" placeholder="Enter Latitude">
+          <label for="Longitude">Longitude: </label><input class="long" type="text" placeholder="Enter Longitude">
+          <div onclick="userInputMarker();" class="btn btn-success">Place Marker</div>
+          <div onclick="removeMarker();" class="btn btn-danger">Remove Marker</div>
+        </div>
+      </div>
+      <div class="col-xs-5 content">
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGqADkHXcDTsRujJIBasXP7wUj8NHQqGQ&callback=initMap"></script>
+
+    <script>
+    </script>
+  </body>
+</html>
