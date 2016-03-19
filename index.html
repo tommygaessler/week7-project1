@@ -8,12 +8,37 @@
     <link rel="stylesheet" href="maps.css">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+
+        var mapOptions = {
+          center: new google.maps.LatLng(39.7640004,-105.1359899),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        var mapCanvas2 = document.getElementById('mapTwo');
+
+        var mapOptions2 = {
+          center: new google.maps.LatLng(25.0735937,54.9489578),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        }
+        var map2 = new google.maps.Map(mapCanvas2, mapOptions2);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+
     </script>
 
   </head>
   <body>
     <h1 id="title">Google Maps Integration</h1>
+    <h2>Denver<h2>
     <div id="map"></div>
+    <h2>Dubai<h2>
     <div id="mapTwo"></div>
 
   </body>

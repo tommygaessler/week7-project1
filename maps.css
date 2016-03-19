@@ -16,8 +16,7 @@
 }
 
 #map {
-	float: left;
+  
 	display: inline-block;
-	margin-left: 125px;
 	clear: both;
 }
